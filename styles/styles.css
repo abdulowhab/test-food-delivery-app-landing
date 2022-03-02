@@ -101,6 +101,61 @@
 }
 .line {
   width: 884px;
-  margin: 72px auto;
+  margin: 36px auto;
   color: #e4e4e4;
+}
+
+/* Create Account Section */
+.create {
+  text-align: center;
+}
+.app-works-header {
+  margin-top: 36px;
+  margin-bottom: 59px;
+  color: #000000;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 44px;
+  line-height: 36px;
+  opacity: 80%;
+}
+.create {
+  margin: 0 200px;
+}
+.create-account {
+  display: flex;
+  margin: auto;
+}
+.login-image {
+  margin-left: -100px;
+}
+.create-account-content {
+  text-align: left;
+  margin-left: -100px;
+}
+.create-account-content > h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #fa4a0c;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  margin-top: 233px;
+  margin-bottom: 17px;
+  font-weight: bold;
+}
+
+.create-account-content h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+.create-account-content h4 {
+  font-family: "Montserrat", sans-serif;
+  color: #737373;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.2px;
 }
