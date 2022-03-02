@@ -159,3 +159,43 @@
   line-height: 38px;
   letter-spacing: 0.2px;
 }
+
+.explore {
+  margin: 0 200px;
+  display: flex;
+  margin: auto;
+}
+
+.explore-content {
+  text-align: left;
+  margin-left: 254px;
+}
+.explore-content > h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #fa4a0c;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  margin-top: 238px;
+  margin-bottom: 17px;
+  font-weight: bold;
+}
+
+.explore-content h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+.explore-content h4 {
+  font-family: "Montserrat", sans-serif;
+  color: #737373;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+}
+.explore-image {
+  margin-left: -100px;
+}
