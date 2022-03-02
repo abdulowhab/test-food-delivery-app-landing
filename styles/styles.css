@@ -84,3 +84,23 @@
   margin-bottom: 162px;
   display: inline-block;
 }
+
+/* Feature Section Start */
+.feature-section {
+  text-align: center;
+}
+.feature-image-1 {
+  /* position: relative; */
+  z-index: 10;
+  margin-top: -280px;
+}
+.feature-image-2 {
+  /* position: relative; */
+  z-index: 10;
+  margin-top: -500px;
+}
+.line {
+  width: 884px;
+  margin: 72px auto;
+  color: #e4e4e4;
+}
