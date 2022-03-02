@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
 }
+
+/* Nav Section styles */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -20,4 +22,9 @@
 .nav-item {
   display: inline-block;
   padding: 63px 57px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background-image: url("./assets/hero-image.png");
 }
