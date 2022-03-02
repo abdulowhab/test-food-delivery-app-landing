@@ -1,0 +1,23 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  padding: 26px 90px;
+  width: 206px;
+  height: 102px;
+}
+.nav-items {
+  list-style: none;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+.nav-item {
+  display: inline-block;
+  padding: 63px 57px;
+}
