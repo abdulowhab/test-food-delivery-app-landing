@@ -239,3 +239,31 @@
   line-height: 38px;
   letter-spacing: 0.2px;
 }
+/* Download App Section */
+.download-app {
+  background-image: url("../assets/download-app.png");
+  padding-top: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.download-app h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+}
+.download-app h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 78px;
+  letter-spacing: 0.2px;
+}
