@@ -18,7 +18,7 @@
 .logo {
   padding: 13px 45px;
   width: 103px;
-  height: 51px;
+  height: 45px;
   position: relative;
 }
 
@@ -32,6 +32,16 @@
   display: inline-block;
   padding: 25px;
   position: relative;
+}
+.nav-link {
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: #fff;
+}
+.nav-item:hover {
+  background-color: #fa4a0c;
+  color: #fff;
 }
 
 /* Hero Section Styles */
