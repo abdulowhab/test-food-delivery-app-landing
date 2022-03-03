@@ -8,12 +8,12 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
   background-color: #fff;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 100000;
+  /* height: 100px; */
 }
 .logo {
   padding: 13px 45px;
@@ -285,6 +285,34 @@
   letter-spacing: 0.2px;
 }
 
+.download-playstore-button {
+  padding: 16px 58.5px;
+  background-color: #fa4a0c;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  border-radius: 30px;
+  border: none;
+  margin-top: 27px;
+  margin-bottom: 50px;
+  margin-left: 25px;
+}
+
+.download-appstore-button {
+  padding: 16px 58.5px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-weight: 700;
+  font-size: 24px;
+  border-radius: 30px;
+  margin-left: 25px;
+
+  margin-top: 27px;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
 /* Footer Section Styles */
 .footer {
   display: flex;
@@ -292,7 +320,6 @@
   align-items: center;
   margin: 0 160px;
   /* margin-top: 36px; */
-  margin-bottom: 25px;
 }
 .footer-image {
   width: 246px;
