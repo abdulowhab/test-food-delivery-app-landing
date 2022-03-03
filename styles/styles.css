@@ -93,15 +93,15 @@
 }
 .feature-image-1 {
   /* position: absolute; */
-  z-index: 10;
+  z-index: 100;
   margin: -300px;
   margin-left: -500px;
 }
 .feature-image-2 {
   position: absolute;
-  z-index: 100;
+  z-index: 10;
   top: -100px;
-  left: 700px;
+  left: 630px;
 }
 .line {
   width: 884px;
@@ -114,6 +114,7 @@
   text-align: center;
   margin-top: 36px;
   margin: 0 200px;
+  border: 1px solid black;
 }
 .app-works-header {
   margin-bottom: 59px;
@@ -167,11 +168,12 @@
   margin: 0 200px;
   display: flex;
   margin: auto;
+  border: 1px solid black;
 }
 
 .explore-content {
   text-align: left;
-  margin-left: 254px;
+  margin-left: 200px;
 }
 .explore-content > h3 {
   font-family: "Montserrat", sans-serif;
@@ -209,9 +211,10 @@
   margin: auto;
   justify-content: center;
   align-items: center;
+  border: 1px solid black;
 }
 .checkout-image {
-  margin-left: 150px;
+  margin-left: -50px;
 }
 .checkout-content {
   text-align: left;
@@ -284,9 +287,11 @@
 .footer-icons {
   display: flex;
   float: right;
+  fill: #fa4a0c;
 }
 
 .footer-icon {
+  fill: #fa4a0c;
   height: 27px;
   width: 33px;
 }
