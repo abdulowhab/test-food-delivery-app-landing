@@ -114,7 +114,6 @@
   text-align: center;
   margin-top: 36px;
   margin: 0 200px;
-  border: 1px solid black;
 }
 .app-works-header {
   margin-bottom: 59px;
@@ -168,7 +167,6 @@
   margin: 0 200px;
   display: flex;
   margin: auto;
-  border: 1px solid black;
 }
 
 .explore-content {
@@ -211,7 +209,6 @@
   margin: auto;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
 }
 .checkout-image {
   margin-left: -50px;
@@ -250,6 +247,8 @@
   background-image: url("../assets/download-app.png");
   padding-top: 150px;
 
+  background-repeat: no-repeat;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -280,14 +279,13 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 160px;
-  margin-top: 36px;
+  /* margin-top: 36px; */
   margin-bottom: 53px;
 }
 
 .footer-icons {
   display: flex;
   float: right;
-  fill: #fa4a0c;
 }
 
 .footer-icon {
