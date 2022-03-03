@@ -90,6 +90,7 @@
   margin-top: 27px;
   margin-bottom: 162px;
   margin-left: 25px;
+  cursor: pointer;
 }
 .appstore-button {
   padding: 16px 58.5px;
@@ -104,6 +105,7 @@
   margin-top: 27px;
   margin-bottom: 162px;
   display: inline-block;
+  cursor: pointer;
 }
 
 /* Feature Section Start */
@@ -306,6 +308,7 @@
   margin-top: 27px;
   margin-bottom: 50px;
   margin-left: 25px;
+  cursor: pointer;
 }
 
 .download-appstore-button {
@@ -321,6 +324,7 @@
   margin-top: 27px;
   margin-bottom: 50px;
   display: inline-block;
+  cursor: pointer;
 }
 
 /* Footer Section Styles */
