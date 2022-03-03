@@ -48,9 +48,10 @@
 .hero-section {
   background-image: url("../assets/hero-image.png");
   background-repeat: no-repeat;
-  max-width: 100%;
+  width: 100%;
   text-align: center;
   position: relative;
+  background-size: 100%;
 }
 .hero-small-title {
   color: #f6f6f6;
@@ -277,6 +278,7 @@
   align-items: center;
   margin-bottom: 0;
   padding-bottom: 0;
+  background-size: 100%;
 }
 .download-app h2 {
   font-family: "Montserrat", sans-serif;
