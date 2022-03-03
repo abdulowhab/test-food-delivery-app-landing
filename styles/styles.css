@@ -267,6 +267,23 @@
   padding-bottom: 78px;
   letter-spacing: 0.2px;
 }
-i {
-  font-size: 30px;
+
+/* Footer Section Styles */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 160px;
+  margin-top: 36px;
+  margin-bottom: 53px;
+}
+
+.footer-icons {
+  display: flex;
+  float: right;
+}
+
+.footer-icon {
+  height: 27px;
+  width: 33px;
 }
