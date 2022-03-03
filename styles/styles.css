@@ -88,16 +88,20 @@
 /* Feature Section Start */
 .feature-section {
   text-align: center;
+  position: relative;
+  margin-bottom: 200px;
 }
 .feature-image-1 {
-  /* position: relative; */
+  /* position: absolute; */
   z-index: 10;
-  margin-top: -280px;
+  margin: -300px;
+  margin-left: -500px;
 }
 .feature-image-2 {
-  /* position: relative; */
-  z-index: 10;
-  margin-top: -500px;
+  position: absolute;
+  z-index: 100;
+  top: -100px;
+  left: 700px;
 }
 .line {
   width: 884px;
@@ -108,9 +112,10 @@
 /* Create Account Section */
 .create {
   text-align: center;
+  margin-top: 36px;
+  margin: 0 200px;
 }
 .app-works-header {
-  margin-top: 36px;
   margin-bottom: 59px;
   color: #000000;
   font-weight: 600;
@@ -119,9 +124,7 @@
   line-height: 36px;
   opacity: 80%;
 }
-.create {
-  margin: 0 200px;
-}
+
 .create-account {
   display: flex;
   margin: auto;
