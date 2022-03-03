@@ -8,20 +8,30 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100000;
 }
 .logo {
-  padding: 26px 90px;
-  width: 206px;
-  height: 102px;
+  padding: 13px 45px;
+  width: 103px;
+  height: 51px;
+  position: relative;
 }
+
 .nav-items {
   list-style: none;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
+  position: relative;
 }
 .nav-item {
   display: inline-block;
-  padding: 63px 57px;
+  padding: 25px;
+  position: relative;
 }
 
 /* Hero Section Styles */
@@ -30,6 +40,7 @@
   background-repeat: no-repeat;
   max-width: 100%;
   text-align: center;
+  position: relative;
 }
 .hero-small-title {
   color: #f6f6f6;
@@ -246,13 +257,14 @@
 .download-app {
   background-image: url("../assets/download-app.png");
   padding-top: 150px;
-
-  background-repeat: no-repeat;
+  max-width: 100%;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .download-app h2 {
   font-family: "Montserrat", sans-serif;
@@ -280,7 +292,11 @@
   align-items: center;
   margin: 0 160px;
   /* margin-top: 36px; */
-  margin-bottom: 53px;
+  margin-bottom: 25px;
+}
+.footer-image {
+  width: 246px;
+  height: 102px;
 }
 
 .footer-icons {
