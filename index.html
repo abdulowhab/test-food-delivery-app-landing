@@ -11,27 +11,32 @@
     
     <!-- Link Stylesheet CSS File -->
     <link rel="stylesheet" href="styles/styles.css">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/f23e11c1c2.js" crossorigin="anonymous"></script>
+
     <title>Food Delivery App</title>
+    <script src="app.js"></script>
     
 </head>
 <body>
     <!-- Navbar -->
     <header>
-        <navbar class="navbar">
-            <!-- Navbar Logo -->
-            <a href="#"><img class="logo" src="./assets/Logo.png" alt=""></a>
-            <div>
-                <ul class="nav-items">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Faq</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                </ul>
-            </div>
-        </navbar>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo"><img class="logo-image" src="./assets/Logo.png" alt=""></label>
+            <ul>
+              <li><a class="active" href="#">Home</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Faq</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
     </header>
     <!-- Nav Section End -->
-
+ 
     
     <main>
         <!-- Hero Section Start -->
@@ -126,16 +131,13 @@
             <img class="footer-image" src="./assets/Logo.png" alt="">
         </div>
         <div class="footer-icons">
-            <a href="#"><img class="footer-icon" src="./assets/icons/twitter.svg" alt="twitter icon"></a>     
-            <a href="#"><img class="footer-icon" src="./assets//icons/facebook.svg" alt="facebook icon"></a>
-            <a href="#"><img class="footer-icon" src="./assets/icons/instagram.svg" alt="instagram icon"></a>
+            <a class="footer-icon" href="#"><i class="fab fa-linkedin"></i></a>
+            <a class="footer-icon" href="#"><i class="fab fa-facebook-square"></i></a>
+            <a class="footer-icon" href="#"><i class="fab fa-twitter"></i></a>
         </div>
         <div><p>Copyright 2020 Bella Onojie.com</p></div>
     </footer>
 
-    <!-- Footer Section End -->
-
-
-    
+    <!-- Footer Section End -->  
 </body>
 </html>
