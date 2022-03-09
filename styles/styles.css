@@ -1,47 +1,61 @@
 * {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
   padding: 0;
-}
-
-/* Nav Section styles */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 100000;
-  /* height: 100px; */
-}
-.logo {
-  padding: 13px 45px;
-  width: 103px;
-  height: 45px;
-  position: relative;
-}
-
-.nav-items {
-  list-style: none;
-  overflow: hidden;
-  font-family: "Montserrat", sans-serif;
-  position: relative;
-}
-.nav-item {
-  display: inline-block;
-  padding: 25px;
-  position: relative;
-}
-.nav-link {
+  margin: 0;
   text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
-.nav-link:hover {
+body {
+  font-family: montserrat;
+}
+nav {
+  background: #fff;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 75px;
+}
+.logo-image {
+  height: 50px;
+  width: 100px;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #fa4a0c;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  background: #fa4a0c;
+  transition: 0.5s;
   color: #fff;
 }
-.nav-item:hover {
-  background-color: #fa4a0c;
-  color: #fff;
+.checkbtn {
+  font-size: 30px;
+  color: #737373;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
 }
 
 /* Hero Section Styles */
@@ -50,8 +64,7 @@
   background-repeat: no-repeat;
   width: 100%;
   text-align: center;
-  position: relative;
-  background-size: 100%;
+  background-size: cover;
 }
 .hero-small-title {
   color: #f6f6f6;
@@ -80,6 +93,11 @@
   line-height: 38px;
   letter-spacing: 0.2px;
 }
+.download-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .playstore-button {
   padding: 16px 58.5px;
   background-color: #fa4a0c;
@@ -88,10 +106,15 @@
   font-size: 24px;
   border-radius: 30px;
   border: none;
-  margin-top: 27px;
-  margin-bottom: 162px;
   margin-left: 25px;
+  margin-top: 27px;
   cursor: pointer;
+  margin-bottom: 162px;
+}
+.playstore-button:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
 }
 .appstore-button {
   padding: 16px 58.5px;
@@ -108,27 +131,26 @@
   display: inline-block;
   cursor: pointer;
 }
+.appstore-button:hover {
+  background-color: #fa4a0c;
+  border: none;
+}
 
 /* Feature Section Start */
 .feature-section {
   text-align: center;
-  position: relative;
   margin-bottom: 200px;
 }
 .feature-image-1 {
   /* position: absolute; */
-  z-index: 100;
-  margin: -300px;
-  margin-left: -500px;
+  margin-top: -150px;
 }
 .feature-image-2 {
-  position: absolute;
-  z-index: 10;
-  top: -100px;
-  left: 630px;
+  /* z-index: 10; */
+  margin-top: -75px;
 }
 .line {
-  width: 884px;
+  width: 60%;
   margin: 36px auto;
   color: #e4e4e4;
 }
@@ -151,14 +173,15 @@
 
 .create-account {
   display: flex;
-  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
 }
 .login-image {
-  margin-left: -100px;
 }
 .create-account-content {
   text-align: left;
-  margin-left: -100px;
+  margin-left: 100px;
 }
 .create-account-content > h3 {
   font-family: "Montserrat", sans-serif;
@@ -166,7 +189,6 @@
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 0.1px;
-  margin-top: 233px;
   margin-bottom: 17px;
   font-weight: bold;
 }
@@ -188,14 +210,13 @@
 }
 /* Explore Section Start */
 .explore {
-  margin: 0 200px;
   display: flex;
-  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
 }
 
 .explore-content {
-  text-align: left;
-  margin-left: 200px;
 }
 .explore-content > h3 {
   font-family: "Montserrat", sans-serif;
@@ -203,7 +224,6 @@
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 0.1px;
-  margin-top: 238px;
   margin-bottom: 17px;
   font-weight: bold;
 }
@@ -230,16 +250,14 @@
 
 .checkout {
   display: flex;
-  margin: auto;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  margin: 20px 0;
 }
 .checkout-image {
-  margin-left: -50px;
 }
 .checkout-content {
   text-align: left;
-  margin-left: -100px;
 }
 .checkout-content > h3 {
   font-family: "Montserrat", sans-serif;
@@ -278,7 +296,8 @@
   align-items: center;
   margin-bottom: 0;
   padding-bottom: 0;
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .download-app h2 {
   font-family: "Montserrat", sans-serif;
@@ -305,12 +324,16 @@
   color: #fff;
   font-weight: 700;
   font-size: 24px;
-  border-radius: 30px;
+  border-radius: 10px;
   border: none;
   margin-top: 27px;
-  margin-bottom: 50px;
+  margin-bottom: 38px;
   margin-left: 25px;
   cursor: pointer;
+}
+.download-playstore-button:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
 }
 
 .download-appstore-button {
@@ -320,13 +343,17 @@
   border: 1px solid #fff;
   font-weight: 700;
   font-size: 24px;
-  border-radius: 30px;
+  border-radius: 10px;
   margin-left: 25px;
 
   margin-top: 27px;
-  margin-bottom: 50px;
+  margin-bottom: 38px;
   display: inline-block;
   cursor: pointer;
+}
+.download-appstore-button:hover {
+  background-color: #fa4a0c;
+  border: none;
 }
 
 /* Footer Section Styles */
@@ -344,11 +371,509 @@
 
 .footer-icons {
   display: flex;
-  float: right;
+}
+.footer-icon {
+  margin: 10px;
+  font-size: 24px;
+  color: #fa4a0c;
+}
+i {
+  margin: 10px;
 }
 
-.footer-icon {
-  fill: #fa4a0c;
-  height: 27px;
-  width: 33px;
+@media (max-width: 952px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  /* Hero Section Responsive Design */
+  .hero-section {
+    background-image: none;
+    /* background-color: #252b42; */
+  }
+  .hero-small-title {
+    color: #737373;
+  }
+  .hero-large-heading {
+    color: #737373;
+  }
+  .hero-desc {
+    color: #737373;
+  }
+  .download-button {
+    flex-direction: column;
+  }
+  .playstore-button {
+    margin-bottom: 15px;
+  }
+  .appstore-button {
+    border: 1px solid #fa4a0c;
+    color: #fa4a0c;
+    margin-top: 15px;
+  }
+  .appstore-button:hover {
+    color: #fff;
+  }
+
+  /* Feature Section Responsive Design */
+  .feature-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feature-image-1 {
+    margin: 0;
+    height: 400px;
+    width: 210px;
+    margin-top: -100px;
+  }
+  .feature-image-2 {
+    height: 330px;
+    width: 200px;
+    margin-left: -20px;
+  }
+
+  /* Create Section Responsive */
+  .create {
+    margin: 0;
+  }
+  .app-works-header {
+    font-size: 24px;
+  }
+
+  /* Create Account Section Resposive */
+  .create-account {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .login-image {
+    margin: 0;
+  }
+  .create-account-content {
+    text-align: center;
+    margin: 0;
+  }
+  .create-account-content h3 {
+    margin: 0;
+    font-size: 24px;
+  }
+  .create-account-content h2 {
+    font-size: 40px;
+  }
+  .create-account-content h4 {
+    font-size: 24px;
+  }
+
+  /* Explore Section Responsive */
+  .explore {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .explore-content {
+    margin: 0;
+    text-align: center;
+  }
+  .explore-content h3 {
+    margin-top: 100px;
+    font-size: 24px;
+  }
+
+  /* Checkout Section Responsive Design */
+  .checkout {
+    flex-direction: column-reverse;
+  }
+  .checkout-content {
+    text-align: center;
+  }
+
+  /* Download App Section */
+  .download-app {
+    background-color: #252b42;
+    background-image: none;
+    text-align: center;
+  }
+  .download-button {
+    display: flex;
+    flex-direction: column;
+  }
+  .download-app h4 {
+    content: "Most Calendars are designed for teams";
+  }
+
+  /* Footer Section Responsive */
+  .footer {
+    flex-direction: column;
+    margin: 30px 0;
+  }
+  .footer-image {
+    display: none;
+  }
+  .footer-icon {
+    margin: 10px;
+    font-size: 24px;
+    color: #fa4a0c;
+  }
+  i {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  /* Hero Section Responsive Design */
+  .hero-section {
+    background-image: none;
+    /* background-color: #252b42; */
+  }
+  .hero-small-title {
+    color: #737373;
+  }
+  .hero-large-heading {
+    color: #737373;
+  }
+  .hero-desc {
+    color: #737373;
+  }
+  .download-button {
+  }
+  .playstore-button {
+    margin-bottom: 15px;
+  }
+  .appstore-button {
+    border: 1px solid #fa4a0c;
+    color: #fa4a0c;
+    margin-top: 15px;
+  }
+  .appstore-button:hover {
+    color: #fff;
+  }
+
+  /* Feature Section Responsive Design */
+  .feature-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feature-image-1 {
+    margin: 0;
+    height: 350px;
+    width: 180px;
+    margin-top: -100px;
+  }
+  .feature-image-2 {
+    height: 300px;
+    width: 170px;
+    margin-left: -20px;
+  }
+
+  /* Create Section Responsive */
+  .create {
+    margin: 0;
+  }
+  .app-works-header {
+    font-size: 24px;
+  }
+
+  /* Create Account Section Resposive */
+  .create-account {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .login-image {
+    margin: 0;
+  }
+  .create-account-content {
+    text-align: center;
+    margin: 0;
+  }
+  .create-account-content h3 {
+    margin: 0;
+    font-size: 24px;
+  }
+  .create-account-content h2 {
+    font-size: 40px;
+  }
+  .create-account-content h4 {
+    font-size: 24px;
+  }
+
+  /* Explore Section Responsive */
+  .explore {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .explore-content {
+    margin: 0;
+    text-align: center;
+  }
+  .explore-content h3 {
+    margin-top: 100px;
+    font-size: 24px;
+  }
+
+  /* Checkout Section Responsive Design */
+  .checkout {
+    flex-direction: column-reverse;
+  }
+  .checkout-content {
+    text-align: center;
+  }
+
+  /* Download App Section */
+  .download-app {
+    background-color: #252b42;
+    background-image: none;
+    text-align: center;
+  }
+  .download-button {
+    display: flex;
+    flex-direction: column;
+  }
+  .download-app h4 {
+    content: "Most Calendars are designed for teams";
+  }
+
+  /* Footer Section Responsive */
+  .footer {
+    flex-direction: column;
+    margin: 30px 0;
+  }
+  .footer-image {
+    display: none;
+  }
+  .footer-icon {
+    margin: 10px;
+    font-size: 24px;
+    color: #fa4a0c;
+  }
+  i {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 688px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    font-family: montserrat;
+  }
+  label.logo {
+    padding: 0 50px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  /* Hero Section Responsive Design */
+  .hero-section {
+    background-image: none;
+    /* background-color: #252b42; */
+  }
+  .hero-small-title {
+    color: #737373;
+  }
+  .hero-large-heading {
+    color: #737373;
+    font-size: 36px;
+  }
+  .hero-desc {
+    color: #737373;
+  }
+  .download-button {
+  }
+  .playstore-button {
+    margin-bottom: 15px;
+  }
+  .appstore-button {
+    border: 1px solid #fa4a0c;
+    color: #fa4a0c;
+    margin-top: 15px;
+  }
+  .appstore-button:hover {
+    color: #fff;
+  }
+
+  /* Feature Section Responsive Design */
+  .feature-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .feature-image-1 {
+    margin: 0;
+    height: 320px;
+    width: 150px;
+    margin-top: -100px;
+  }
+  .feature-image-2 {
+    height: 270px;
+    width: 140px;
+    margin-left: -20px;
+  }
+
+  /* Create Section Responsive */
+  .create {
+    margin: 0;
+  }
+  .app-works-header {
+    font-size: 24px;
+  }
+
+  /* Create Account Section Resposive */
+  .create-account {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .login-image {
+    margin: 0;
+  }
+  .create-account-content {
+    text-align: center;
+    margin: 0;
+  }
+  .create-account-content h3 {
+    margin: 0;
+    font-size: 24px;
+  }
+  .create-account-content h2 {
+    font-size: 40px;
+  }
+  .create-account-content h4 {
+    font-size: 24px;
+  }
+
+  /* Explore Section Responsive */
+  .explore {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .explore-content {
+    margin: 0;
+    text-align: center;
+  }
+  .explore-content h3 {
+    margin-top: 100px;
+    font-size: 24px;
+  }
+
+  /* Checkout Section Responsive Design */
+  .checkout {
+    flex-direction: column-reverse;
+  }
+  .checkout-content {
+    text-align: center;
+  }
+
+  /* Download App Section */
+  .download-app {
+    background-color: #252b42;
+    background-image: none;
+    text-align: center;
+  }
+  .download-button {
+    display: flex;
+    flex-direction: column;
+  }
+  .download-app h4 {
+    content: "Most Calendars are designed for teams";
+  }
+
+  /* Footer Section Responsive */
+  .footer {
+    flex-direction: column;
+    margin: 30px 0;
+  }
+  .footer-image {
+    display: none;
+  }
+  .footer-icon {
+    margin: 10px;
+    font-size: 24px;
+    color: #fa4a0c;
+  }
+  i {
+    margin: 10px;
+  }
 }
